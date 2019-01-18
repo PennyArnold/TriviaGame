@@ -22,17 +22,21 @@
     <title>Frasier Trivia Game</title>
 </head>
 <body>
-        <div class="jumbotron big-banner" style="height: 800px;">
+        <div class="jumbotron big-banner" style="height: 1000px;">
 
                 <div class="container">
                         <div class="row">
-                          <div class="col-sm-4"> </div>
+                          <div class="col-sm-4"> 
+                                <button class ="btn btn-rgb(143, 180, 140)" id ="start">Start Game</button><br>
+                          </div>
                           <div class="col-sm-4">
                                 <h3 class="text-center text-white" style="background-color: rgb(143, 180, 140)">
                                         <strong>Frasier Trivia Game</strong>
                                     </h3>
                           </div>
-                          <div class="col-sm-4"></div>
+                          <div class="col-sm-4">
+                                <button class="btn btn-rgb(143, 180, 140)" id="reset">Play Again?</button>
+                          </div>
                         </div>
                       </div>
 
@@ -40,11 +44,13 @@
                         <div class="row">
                           <div class="col-sm-4"></div>
                           <div class="col-sm-4" style="background-color: rgb(143, 180, 140)">
-                                <h3 id="counter" class="text-center text-white" >Time Remaining: 00:00</h3>
-                                <button id="start">Start</button>
-                                <button id="stop">Stop</button>
+                                <h4 id="timeleft" class="text-center text-white" >Time Remaining: 00:00</h4>
+                             
+                              
                           </div>
-                          <div class="col-sm-4"></div>
+                          <div class="col-sm-4">
+                              <audio></audio>
+                          </div>
                         </div>
                       </div>
 
@@ -54,27 +60,14 @@
                       <div class="col-sm-4"></div>
 
                       <div class="col-sm-4" style="background-color: rgb(143, 180, 140)">
-                        <p id="quiz" class="text-white">This is the question</p>
-                        <div class="form-group form-check">
-                                <div class="row mx-auto">
-                                    <input type="checkbox" class="form-check-input" id="Check1">
-                                    <label class="form-check-label text-white" for="Check1">Answer One</label>
+                        <p id="quiz" class="text-white"></p>
+                        <div class="form-group form-check" id="theAnswers">
+                           
+
+                                   
                                 </div>
 
-                                <div class="row mx-auto">
-                                    <input type="checkbox" class="form-check-input" id="Check2">
-                                    <label class="form-check-label text-white" for="Check2">Answer Two</label>
-                                </div>
-
-                                <div class="row mx-auto">
-                                    <input type="checkbox" class="form-check-input" id="Check3">
-                                    <label class="form-check-label text-white" for="Check3">Answer Three</label>
-                                </div>
-
-                                <div class="row mx-auto">
-                                    <input type="checkbox" class="form-check-input" id="Check4">
-                                    <label class="form-check-label text-white" for="Check4">Answer Four</label>
-                                </div>
+                     
                             </div>
                         </div>
 
