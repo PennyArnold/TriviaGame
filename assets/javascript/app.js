@@ -50,7 +50,7 @@ var myQuestions = [
     question: "What language is Frasier tricked into delivering Frederick’s bar mitzvah speech in?", 
     choice: ["German", "Yiddish", "Klingon", "Elvish"],
     answer: 2,
-    photo: "assets/images/frederick.jpg"
+    photo: "assets/images/frederick.JPG"
   }, 
   {
     question: "What kind of psychologist is Frasier?", 
