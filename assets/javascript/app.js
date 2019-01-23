@@ -1,13 +1,5 @@
 
 
-//it should display the questions in the HTML
-//questions can be an object with properties than include all possible answers
-//it should have an event that makes something happen when the user chooses a button
-//buttons should toggle with only one option to select for each question
-//it should diplay if you got the answer right or wrong
-//it should display the correct answer
-//after the user completes all answers, game needs to restart
-
 $( document ).ready(function() {
 
 //it should have questions with answers to chose from and some pictures like the sandwiches exercise
@@ -16,13 +8,13 @@ var myQuestions = [
     question: "How many times have Frasier and Roz hooked up?",
     choice: ["once", "twice", "never", "every time Lillith shows up"],
     answer: 0,
-    photo: "assets/images/hookup.jpg"
+    photo: "assets/images/hookup.png"
   },
   {
     question: "What’s Martin Crane’s favorite brand of beer?",
     choice: ["Ballantine", "Mad Dog", "Schlitz Malt Liquor", "Michelob Ultra"],
     answer: 0,
-    photo: "assets/images/beer.webp"
+    photo: "assets/images/beer.jpg"
   },
 {
     question: "Frasier was the spin-off of what TV sitcom?", 
@@ -40,7 +32,7 @@ var myQuestions = [
      question:  "Who was Frasier's first wife?",
     choice: ["Roz Doyle", "Lillith Sternin", "Diane Chambers", "Marge Simpson"],
     answer: 1,
-    photo: "assets/images/lillith.png"
+    photo: "assets/images/lillith.jpg"
   }, 
   {
     question: "What’s Eddie the dog’s fulll name?", 
@@ -58,19 +50,19 @@ var myQuestions = [
     question: "What language is Frasier tricked into delivering Frederick’s bar mitzvah speech in?", 
     choice: ["German", "Yiddish", "Klingon", "Elvish"],
     answer: 2,
-    photo: "assets/images/frederick.webp"
+    photo: "assets/images/frederick.jpg"
   }, 
   {
     question: "What kind of psychologist is Frasier?", 
     choice: ["Freudian", "Jungian", "Belgian", "Behavioral"],
     answer: 0,
-    photo: "assets/images/freud.jpg"
+    photo: "assets/images/Frasier.jpg"
   }, 
   {
     question: "What’s Frasier’s main hangout?", 
     choice: ["Café Nervosa", "Le Cigar Volant", "McGintey’s","Central Perk"],
     answer: 0,
-    photo: "assets/images/coffee.webp"
+    photo: "assets/images/coffee.jpg"
   }];
 
   //set up all of my global variables
@@ -136,11 +128,7 @@ var myQuestions = [
     index = Math.floor(Math.random()*myQuestions.length);
     pick = myQuestions[index];
   
-  //	if (pick.shown) {
-  //		//recursive to continue to generate new index until one is chosen that has not shown in this game yet
-  //		displayQuestion();
-  //	} else {
-  //		console.log(pick.question);
+  
       //iterate through answer array and display
       $("#quiz").html("<h2>" + pick.question + "</h2>");
       for(var i = 0; i < pick.choice.length; i++) {
