@@ -133,7 +133,7 @@ var myQuestions = [
       $("#quiz").html("<h2>" + pick.question + "</h2>");
       for(var i = 0; i < pick.choice.length; i++) {
         var userChoice = $("<div>");
-        userChoice.addClass("answerchoice");
+        userChoice.addClass("answerchoice text-white");
         userChoice.html(pick.choice[i]);
         //assign array position to it so can check answer
         userChoice.attr("data-guessvalue", i);

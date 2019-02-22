@@ -1,5 +1,5 @@
 .big-banner{
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/background1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -9,4 +9,9 @@
 img{
    width: 100%;
    height: 2in;
-}
+};
+
+#theAnswers{
+    font-size: 200%;
+    color: white;
+};
